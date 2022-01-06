@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lee</title>
+
+</head>
+<body>
+
+	<form action = "./main.html" method = "post" id = "form" name = "form" enctype = multipart/form-data>
+	
+	<!-- 
+		<input type = "search" id = "search" name = "search"> -->
+		
+<!-- 		<input type = "url" id="" name = ""> -->
+		<input type = "email" id = "" name = "">
+		<br><input type = "submit" value = "제출" > 
+	
+	 
+	
+	
+	</form>
+
+	<script type="text/javascript">
+			/* validation */ 
+	
+		function here() {
+		/* 	alert("password4: "+ document.getElementById("password4").value);
+			document.getElementById("form").submit(); */
+			if(document.getElementById("password2").value != document.getElementById("password3").value){
+				document.getElementById("password2").value =""
+				document.getElementById("password3").value =""
+				document.getElementById("password2").focus();
+				return false;
+			}else{
+				alert("둘다같음!");
+			}
+			document.getElementById("form").submit();
+		}
+	
+	</script>
+</body>
+</html>
