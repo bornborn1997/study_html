@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lee</title>
+
+</head>
+<body>
+		<form action="./main.html" method=get id="time" name="time" enctype="multipart/form-data">
+		
+		
+	    <input type ="time" id = "form" name = "form">
+	    <br><input type = "button" id = "butoon" name = "button" value= "제출"  onclick = "here();">
+		</form>
+		
+		<script type="text/javascript">
+			/* validation */ 
+	
+		function here() {
+			alert("time: "+ document.getElementById("id1").value);
+			document.getElementById("form").submit();
+		}
+	
+	</script>
+</body>
+</html>
